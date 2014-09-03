@@ -212,6 +212,16 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 5;
 }
 
+.welcome-container {
+    padding-top: 20%;
+}
+
+.welcome-container {
+    position: relative;
+    margin: 0 auto;
+    zoom: 1;
+}
+
 .slogan-text {
     font-family: 'Open Sans',sans-serif;
     color: #fff;
@@ -239,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #features {
     padding: 75px 0;
-    background: #fff;
+    background: #FFF;
 }
 
     #features .features {
@@ -263,6 +273,11 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 30px;
         line-height: 36px;
         margin-bottom: 15px;
+        color: #2C3E50;
+    }
+
+    .content-container > .content-text > h4 {
+        color: #2C3E50;
     }
 
 @media (min-width: 1023px) {
@@ -311,9 +326,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+#pricing {
+    padding: 75px 0;
+    background: #EEEEEE;
+}
+
 #team {
     padding: 75px 0;
-    background: #fff;
+    background: #FFF;
 }
 
 #contact {
@@ -447,7 +467,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .1s ease-in-out;
 }
 
-form .btn.btn-default {
+.btn.btn-default-inverse {
     margin: 40px auto 0;
     background: 0 0;
     position: relative;
@@ -468,11 +488,11 @@ form .btn.btn-default {
     transition: all .1s ease-in-out;
 }
 
-.btn.btn-default:active, .btn.btn-default:hover {
-    background: #fff;
-    border-color: #fff;
-    color: #fff;
-}
+    .btn.btn-default-inverse:active, .btn.btn-default-inverse:hover {
+        background: #fff;
+        border-color: #fff;
+        color: #fff;
+    }
 
 .input-lg, button, input {
     border-radius: 0;
@@ -579,7 +599,7 @@ label.valid {
 
 #contact {
     background: #2C3E50;
-    color: #fff;
+    color: #EEEEEE;
 }
 
     #contact .spacer {
@@ -596,8 +616,14 @@ label.valid {
 
     .btn.btn-default:hover,
     .btn.btn-default:active {
+        background-color: #FFF;
         color: #2C3E50;
     }
+
+.btn.btn-default-inverse:hover,
+.btn.btn-default-inverse:active {
+    color: #2C3E50;
+}
 
 .social {
     background: #3498DB;
@@ -637,15 +663,135 @@ label.valid {
     margin: 0 auto;
 }
 
-.welcome-container {
-    padding-top: 20%;
+#download {
+    background: #2C3E50;
+    color: #f2f2f2;
+    padding: 65px 0;
 }
 
-.welcome-container {
-    position: relative;
-    margin: 0 auto;
-    zoom: 1;
+.download .download-left {
+    padding: 40px 40px 0 40px;
 }
+
+.download .download-right {
+    padding: 40px 40px 0 40px;
+}
+
+.download-right h2 {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#plan1, #plan1 ul, #plan1 ul li, #plan2, #plan2 ul, #plan2 ul li, #plan3, #plan3 ul, #plan3 ul li, #plan4, #plan4 ul, #plan4 ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#price-plans:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#price-plans {
+    zoom: 1;
+    max-width: 69em;
+}
+
+    #price-plans #plan1 .plan, #price-plans #plan2 .plan, #price-plans #plan3 .plan, #price-plans #plan4 .plan {
+        background: #FFF;
+        float: left;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        margin: 0 0 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,.1);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    }
+
+.plan-container .title h2 {
+    font-size: 2.125em;
+    font-weight: 300;
+    color: #2C3E50;
+    margin: 0;
+    padding: .6em 0;
+}
+
+    .plan-container .title h2.best-plan-title {
+        background: #2C3E50;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+        font-weight: 700;
+    }
+
+.plan-container .price p {
+    background: #2C3E50;
+    color: #FFF;
+    font-size: 1.2em;
+    font-weight: 700;
+    height: 2.6em;
+    line-height: 2.6em;
+    margin: 0 0 1em;
+}
+
+.plan-container .options {
+    margin-top: 10em;
+}
+
+    .plan-container .options li {
+        font-weight: 700;
+        color: #364762;
+        line-height: 2.5;
+    }
+
+        .plan-container .options li span {
+            font-weight: 400;
+            color: #979797;
+        }
+
+.plan-container .button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 2.8em;
+    border: 2px solid #2C3E50;
+    display: inline-block;
+    width: 80%;
+    height: 2.8em;
+    margin: 1.5em 0 1.8em;
+}
+
+#price-plans {
+    margin: 2em auto;
+}
+
+    #price-plans #plan1 > li:last-child, #price-plans #plan2 > li:last-child, #price-plans #plan3 > li:last-child, #price-plans #plan4 > li:last-child {
+        margin-right: 0;
+    }
+
+    #price-plans #plan1 .plan:hover, #price-plans #plan2 .plan:hover, #price-plans #plan3 .plan:hover, #price-plans #plan4 .plan:hover {
+        -webkit-transform: scale(1.04);
+        -moz-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        -o-transform: scale(1.04);
+        transform: scale(1.04);
+    }
+
+.plan-container .button a {
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+    .plan-container .button a:hover {
+        background: #2C3E50;
+        color: #FFF;
+    }
 
 .btn-circle {
     width: 70px;
