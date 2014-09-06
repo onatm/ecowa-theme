@@ -2,7 +2,7 @@
 
 Ecowa is a 100% responsive One Page theme and is built on Twitter Bootstrap 3.0 Framework, with several amazing jQuery plugins. It is designed to help app developers promote their mobile apps.
 
-[![Screenshot](https://raw.githubusercontent.com/onatm/ecowa-theme/master/ecowa-theme.png)](https://raw.githubusercontent.com/onatm/ecowa-theme/master/ecowa-theme.png)
+![](https://raw.github.com/onatm/ecowa-theme/master/ecowa-theme.png)
 
 ## Features
 
